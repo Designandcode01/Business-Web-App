@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Your Brand</title>
+  <meta name="description" content="Get in touch with Your Brand. Fill out our contact form and we'll respond within one business day.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.yourdomain.com/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Your Brand home">YourBrand</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p>Questions, project ideas, or just want to say hello? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container contact-grid">
+        <div class="contact-form-wrap">
+          <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+            <div class="form-field">
+              <label for="name">Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+              <span class="error" data-error-for="name"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true">
+              <span class="error" data-error-for="email"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message <span class="required">*</span></label>
+              <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+              <span class="error" data-error-for="message"></span>
+            </div>
+
+            <!-- Simple honeypot for spam -->
+            <div class="honeypot" aria-hidden="true">
+              <label for="website">Website</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <aside class="contact-info">
+          <h2>Other ways to reach us</h2>
+          <p><strong>Email:</strong> <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+          <p><strong>Office:</strong><br>123 Main Street<br>Suite 400<br>Anytown, USA 12345</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> YourBrand. All rights reserved.</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
